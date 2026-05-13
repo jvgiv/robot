@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Donate() {
   return (
-    <div className="donate-section">
+    <div id='donate' className="donate-section">
       <div className="reveal">
         <div className="section-tag">Can't Sponsor?</div>
         <h2>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StatBand() {
   return (
-    <div className="stats-strip reveal">
+    <div id='stats' className="stats-strip reveal">
       <div className="stat-item">
         <span className="stat-num">4</span>
         <span className="stat-label">Years Competing</span>

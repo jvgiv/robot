@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Record() {
   return (
-    <div className="section" style={{ paddingTop: 0 }}>
+    <div id='record' className="section" style={{ paddingTop: 0 }}>
       <div className="two-col reverse reveal">
         <div className="image-frame">
           <img

@@ -4,8 +4,17 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const homeSubItems = [
+  { href: "/#home", label: "Home" },
+  { href: "/#stats", label: "Stats" },
+  { href: "/#why-sponsor", label: "Why Sponsor" },
+  { href: "/#record", label: "Record" },
+  { href: "/#tiers", label: "Tiers" },
+  { href: "/#donate", label: "Donate" },
+];
+
 const navItems = [
-  { href: "/", label: "Home" },
+  { href: "/", label: "Home", subItems: homeSubItems },
   { href: "/team", label: "Our Team" },
   { href: "/journey", label: "Our Journey" },
   { href: "/robot", label: "Our Robot" },
@@ -27,10 +36,19 @@ export default function Header() {
       </Link>
       <ul className="nav-links">
         {navItems.map((item) => (
-          <li key={item.href}>
+          <li key={item.href} className={item.subItems ? "nav-dropdown" : ""}>
             <Link href={item.href} className={isActive(item.href) ? "active" : ""}>
               {item.label}
             </Link>
+            {item.subItems && (
+              <ul className="nav-dropdown-menu">
+                {item.subItems.map((sub) => (
+                  <li key={sub.href}>
+                    <Link href={sub.href}>{sub.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>

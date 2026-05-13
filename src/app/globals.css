@@ -110,12 +110,54 @@ a {
   .nav-links a {
     color: var(--titanium);
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     transition: color 0.2s;
   }
   .nav-links a:hover, .nav-links a.active { color: var(--electric); }
+
+  /* ── NAV DROPDOWN ── */
+  .nav-dropdown { position: relative; padding-bottom: 0.75rem; }
+
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    min-width: 150px;
+    list-style: none;
+    background: rgba(10,12,16,0.96);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(0,229,255,0.2);
+    padding: 0.5rem 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .nav-dropdown-menu li a {
+    display: block;
+    padding: 0.45rem 1.25rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--titanium);
+    white-space: nowrap;
+    transition: color 0.2s, background 0.2s;
+  }
+
+  .nav-dropdown-menu li a:hover {
+    color: var(--electric);
+    background: rgba(0,229,255,0.05);
+  }
 
   /* ── HERO ── */
   .hero {
@@ -157,7 +199,7 @@ a {
   }
 
   .hero-eyebrow {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--electric);
@@ -223,7 +265,7 @@ a {
     gap: 0.5rem;
     padding: 0.9rem 2rem;
     font-family: 'Space Mono', monospace;
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     text-decoration: none;
@@ -289,7 +331,7 @@ a {
     line-height: 1;
   }
   .stat-label {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--titanium);
@@ -370,7 +412,7 @@ a {
 
   .team-label {
     display: inline-block;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--electric);
@@ -400,7 +442,7 @@ a {
     margin-top: 1.15rem;
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--paper);
@@ -431,7 +473,7 @@ a {
   }
 
   .section-tag {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--electric);
@@ -462,7 +504,7 @@ a {
 
   .section p {
     color: var(--titanium);
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     line-height: 2;
     max-width: 600px;
   }
@@ -565,7 +607,7 @@ a {
 
   .tier-badge {
     display: inline-block;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     padding: 0.35rem 0.75rem;
@@ -589,7 +631,7 @@ a {
   .tier-card.material .tier-price { color: var(--fire); }
 
   .tier-price-sub {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 0.1em;
     color: rgba(200,205,214,0.5);
     margin-bottom: 2rem;
@@ -597,7 +639,7 @@ a {
 
   .tier-perks { list-style: none; margin-bottom: 2rem; }
   .tier-perks li {
-    font-size: 0.72rem;
+    font-size: 0.85rem;
     line-height: 1.6;
     color: var(--titanium);
     padding: 0.6rem 0;
@@ -608,7 +650,7 @@ a {
   }
   .tier-perks li::before {
     content: '▸';
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     flex-shrink: 0;
     margin-top: 0.1em;
   }
@@ -653,7 +695,7 @@ a {
   }
 
   .donate-method-label {
-    font-size: 0.62rem;
+    font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--electric);
@@ -661,7 +703,7 @@ a {
   }
 
   .donate-method-detail {
-    font-size: 0.75rem;
+    font-size: 0.88rem;
     color: var(--titanium);
     line-height: 1.7;
   }
@@ -677,7 +719,7 @@ a {
     background: rgba(10,12,16,0.9);
     border: 1px solid rgba(0,229,255,0.2);
     padding: 1.5rem;
-    font-size: 0.72rem;
+    font-size: 0.85rem;
     line-height: 2;
     clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
   }
@@ -709,13 +751,11 @@ a {
     border-top: 1px solid rgba(200,205,214,0.1);
     padding: 3rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
   }
 
   .footer-brand {
+    flex: 1;
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -724,9 +764,15 @@ a {
   }
   .footer-brand span { color: var(--electric); }
 
-  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .footer-links a {
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--titanium);
@@ -736,7 +782,9 @@ a {
   .footer-links a:hover { color: var(--electric); }
 
   .footer-copy {
-    font-size: 0.62rem;
+    flex: 1;
+    text-align: right;
+    font-size: 0.75rem;
     color: rgba(200,205,214,0.3);
     letter-spacing: 0.1em;
   }

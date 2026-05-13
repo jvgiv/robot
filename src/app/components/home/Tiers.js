@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Tiers() {
   return (
-    <div className="tiers-section">
+    <div id='tiers' className="tiers-section">
       <div className="tiers-inner">
         <div
           className="reveal"

@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 export default function WhySponsor() {
   return (
-    <div className="section">
+    <div id='why-sponsor' className="section">
       <div className="two-col reveal">
         <div>
           <div className="section-tag">Why Sponsor</div>
@@ -23,10 +24,12 @@ export default function WhySponsor() {
           </p>
         </div>
         <div className="image-frame">
-          <img
+          <Image
             src="https://lh3.googleusercontent.com/sitesv/AA5AbUCHft-zIs1DHK5EHv954YY6d8YsCBI6kEM6OFyvhSpbAio-k-Ltsdrb8-hbS8w89msmzL0nIeb5dQIGHe9PRqnv_BN8Q1UrPwdq3-K41HY6chPRQw2sMTWKSMQO5TnCzhO0nYYBe1B4Nj5Pr9fz1Jk2IeUeuFEPlQ-1RVJPgBvfrTJkoVSAkMhMXxneRcYxj4QmPznq4liTuy-EgtlAXy1rpJfHLlPljeRNOX0=w1280"
             alt="Robo Titans team in action"
-            // onError="this.style.background='#1c2030';this.style.display='block'"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{ objectFit: "cover" }}
           />
         </div>
       </div>
