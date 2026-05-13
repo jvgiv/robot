@@ -75,11 +75,12 @@ export default function Tiers() {
               <li>Direct contribution to build quality</li>
             </ul>
             <a
-              href="mailto:tollgaterobotics@example.com"
+              href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
+              target="_blank"
               className="btn btn-outline"
               style={{ width: "100%", justifyContent: "center" }}
             >
-              Contact Us
+              Become a Sponsor
             </a>
           </div>
         </div>
