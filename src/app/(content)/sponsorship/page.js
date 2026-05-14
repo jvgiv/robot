@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const tiers = [
   {
@@ -39,25 +40,34 @@ export default function Sponsorship() {
               students of all ages through our robotics club.
             </p>
           </div>
-          <div className="image-frame">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/sponsorshipimg/img1.jpg" alt="Robo Titans Sponsorship" />
+          <div className="image-frame" style={{ position: "relative" }}>
+            <Image
+              src="/sponsorshipimg/img1.jpg"
+              alt="Robo Titans Sponsorship"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </div>
 
       <div className="section" style={{ paddingTop: 0 }}>
         <div className="two-col reverse reveal">
-          <div className="image-frame">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/sponsorshipimg/img1.jpg" alt="Robo Titans at competition" />
+          <div className="image-frame" style={{ position: "relative" }}>
+            <Image
+              src="/teampic.JPG"
+              alt="Robo Titans at competition"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+            />
           </div>
           <div>
             <div className="section-tag">Our Goals</div>
             <h2>
               Here to make
-              <br />
-              a lasting mark.
+              <br />a lasting mark.
             </h2>
             <p>
               In only four years we have built a powerful, dominant record in
@@ -130,7 +140,15 @@ export default function Sponsorship() {
                   >
                     {tier.perks}
                   </span>
-                  <span style={{ color: "var(--electric)", marginLeft: "auto", flexShrink: 0 }}>↗</span>
+                  <span
+                    style={{
+                      color: "var(--electric)",
+                      marginLeft: "auto",
+                      flexShrink: 0,
+                    }}
+                  >
+                    ↗
+                  </span>
                 </a>
               </li>
             ))}
@@ -166,8 +184,8 @@ export default function Sponsorship() {
             }}
           >
             <p style={{ fontSize: "0.85rem", color: "var(--titanium)" }}>
-              <span style={{ color: "var(--electric)" }}>Venmo</span>{" "}
-              — @toll-gate-robotics
+              <span style={{ color: "var(--electric)" }}>Venmo</span> —
+              @toll-gate-robotics
             </p>
             <p style={{ fontSize: "0.85rem", color: "var(--titanium)" }}>
               <span style={{ color: "var(--electric)" }}>Check</span> — Payable

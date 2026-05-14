@@ -829,6 +829,12 @@ a {
   }
   @keyframes blink { 50% { opacity: 0; } }
 
+  /* ── SPONSORS ── */
+  a.sponsor-card:hover > div {
+    background: rgba(0,229,255,0.06);
+    border-color: rgba(0,229,255,0.3);
+  }
+
   /* ── FOOTER ── */
   .footer {
     border-top: 1px solid rgba(200,205,214,0.1);

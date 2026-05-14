@@ -25,7 +25,7 @@ export default function WhySponsor() {
         </div>
         <div className="image-frame">
           <Image
-            src="https://lh3.googleusercontent.com/sitesv/AA5AbUCHft-zIs1DHK5EHv954YY6d8YsCBI6kEM6OFyvhSpbAio-k-Ltsdrb8-hbS8w89msmzL0nIeb5dQIGHe9PRqnv_BN8Q1UrPwdq3-K41HY6chPRQw2sMTWKSMQO5TnCzhO0nYYBe1B4Nj5Pr9fz1Jk2IeUeuFEPlQ-1RVJPgBvfrTJkoVSAkMhMXxneRcYxj4QmPznq4liTuy-EgtlAXy1rpJfHLlPljeRNOX0=w1280"
+            src="/richamps.JPG"
             alt="Robo Titans team in action"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

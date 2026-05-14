@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const features = [
   "Prioritizes speed over accuracy to score more points",
@@ -13,9 +14,14 @@ export default function Robot() {
     <>
       <div className="section">
         <div className="two-col reveal">
-          <div className="image-frame">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/robot/ourrobot.png" alt="Our Robot" />
+          <div className="image-frame" style={{ position: "relative" }}>
+            <Image
+              src="/robot/ourrobot.png"
+              alt="Our Robot"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+            />
           </div>
           <div>
             <div className="section-tag">Our Robot</div>
@@ -24,7 +30,15 @@ export default function Robot() {
               <br />
               Strength.
             </h2>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem", marginTop: "1.5rem" }}>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.6rem",
+                marginTop: "1.5rem",
+              }}
+            >
               {features.map((f, i) => (
                 <li
                   key={i}
@@ -37,11 +51,20 @@ export default function Robot() {
                     padding: "0.75rem 1rem",
                     background: "rgba(10,12,16,0.55)",
                     border: "1px solid rgba(200,205,214,0.1)",
-                    clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))",
+                    clipPath:
+                      "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))",
                     lineHeight: "1.5",
                   }}
                 >
-                  <span style={{ color: "var(--electric)", flexShrink: 0, marginTop: "0.1em" }}>▸</span>
+                  <span
+                    style={{
+                      color: "var(--electric)",
+                      flexShrink: 0,
+                      marginTop: "0.1em",
+                    }}
+                  >
+                    ▸
+                  </span>
                   {f}
                 </li>
               ))}
@@ -52,9 +75,14 @@ export default function Robot() {
 
       <div className="section" style={{ paddingTop: 0 }}>
         <div className="two-col reverse reveal">
-          <div className="image-frame">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/robot/cadrobot.png" alt="3D CAD Rendering" />
+          <div className="image-frame" style={{ position: "relative" }}>
+            <Image
+              src="/robot/cadrobot.png"
+              alt="3D CAD Rendering"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+            />
           </div>
           <div>
             <div className="section-tag">Software</div>
@@ -69,6 +97,38 @@ export default function Robot() {
               keeps it on course and lets us dynamically adjust shot power for
               better scoring.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="section" style={{ paddingTop: 0 }}>
+        <div className="two-col reverse reveal">
+          <div>
+            <div className="section-tag">Latest Iteration</div>
+            <h2>
+              Version 3
+              <br />
+              Overview
+            </h2>
+            <ul>
+              <li>Custom Powder coated Aluminum 5052 Chassis</li>
+              <li>Smaller Drivetrain With more Maneuverability</li>
+              <li>Chained through-take for fast feeding</li>
+              <li>Automated Turret with Rigid G10 Panels</li>
+              <li>Dual Motor Launcher</li>
+              <li>Vectored intake</li>
+              <li>Limelight 3a Localization</li>
+              <li>Surgical tubing for flexible but springy through-take</li>
+            </ul>
+          </div>
+          <div className="image-frame" style={{ position: "relative" }}>
+            <Image
+              src="/robot/rob1.jpg"
+              alt="3D CAD Rendering"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </div>
