@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -25,12 +26,13 @@ export default function Footer() {
         >
           Sponsorship Packet ↗
         </a>
-        <a
-          href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
-          target="_blank"
+        <Link
+          // href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
+          href='/sponsorship'
+          // target="_blank"
         >
           Donate ↗
-        </a>
+        </Link>
         <a href="mailto:tollgaterobotics@example.com">
           Contact Us ↗
         </a>

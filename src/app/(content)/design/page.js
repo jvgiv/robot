@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import styles from "./design.module.css";
 
 const steps = [
   { title: "Define", desc: "Defined challenges, requirements, and constraints" },
@@ -123,14 +124,7 @@ export default function Design() {
             <br />
             Versions.
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: "1rem",
-              marginTop: "1.5rem",
-            }}
-          >
+          <div className={styles.iterationsGrid}>
             {iterations.map((iter, i) => (
               <div
                 key={i}

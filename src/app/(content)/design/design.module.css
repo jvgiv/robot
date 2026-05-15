@@ -1,0 +1,12 @@
+.iterationsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .iterationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
