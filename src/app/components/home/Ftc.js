@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Ftc() {
   return (
-    <div id='record' className="section" style={{ paddingTop: 0 }}>
+    <div id='tb' className="section" style={{ paddingTop: "3rem" }}>
       <div className="two-col reverse reveal">
         <div className="image-frame" style={{ position: "relative" }}>
           <Image

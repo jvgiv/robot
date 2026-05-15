@@ -106,7 +106,8 @@ const sponsorImages = [
 
 export default function Sponsors() {
   return (
-    <div id="sponsors" className="section">
+    <div id="sponsors" style={{ background: "var(--mid)", borderTop: "1px solid rgba(200,205,214,0.08)", borderBottom: "1px solid rgba(200,205,214,0.08)" }}>
+      <div className="section">
       <div className="reveal">
         <div className="section-tag">Our Sponsors</div>
         <h2>
@@ -161,6 +162,7 @@ export default function Sponsors() {
           })}
         </div>
       </div>
+    </div>
     </div>
   )
 }

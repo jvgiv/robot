@@ -11,6 +11,7 @@ const homeSubItems = [
   { href: "/#stats", label: "Stats" },
   { href: "/#why-sponsor", label: "Why Sponsor" },
   { href: "/#record", label: "Record" },
+  { href: "/#tb", label: "Team Building" },
   { href: "/#tiers", label: "Tiers" },
   { href: "/#donate", label: "Donate" },
   { href: "/#sponsors", label: "Our Sponsors" },
