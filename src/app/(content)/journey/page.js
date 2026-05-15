@@ -71,9 +71,13 @@ export default function Journey() {
               on long after we graduate.
             </p>
           </div>
-          <div className="image-frame">
+          <div className="image-frame" style={{ aspectRatio: "auto", overflow: "visible" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/flyer.png" alt="Robo Titans Flyer" />
+            <img
+              src="/flyer.png"
+              alt="Robo Titans Flyer"
+              style={{ width: "100%", height: "auto", objectFit: "contain" }}
+            />
           </div>
         </div>
       </div>
