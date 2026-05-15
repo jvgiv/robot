@@ -32,14 +32,14 @@ export default function Tiers() {
               <li>Business logo on team website</li>
               <li>Recognition in competition programs</li>
             </ul>
-            <a
+            {/* <a
               href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
               target="_blank"
               className="btn btn-outline"
               style={{ width: "100%", justifyContent: "center" }}
             >
               Become a Sponsor
-            </a>
+            </a> */}
           </div>
 
           {/* <!-- Gold --> */}
@@ -53,14 +53,14 @@ export default function Tiers() {
               <li>Business logo on team website</li>
               <li>National visibility at World Championship</li>
             </ul>
-            <a
+            {/* <a
               href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
               target="_blank"
               className="btn btn-primary"
               style={{ width: "100%", justifyContent: "center" }}
             >
               Become a Sponsor
-            </a>
+            </a> */}
           </div>
 
           {/* <!-- Material --> */}
@@ -74,14 +74,14 @@ export default function Tiers() {
               <li>Business logo on team website</li>
               <li>Direct contribution to build quality</li>
             </ul>
-            <a
+            {/* <a
               href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
               target="_blank"
               className="btn btn-outline"
               style={{ width: "100%", justifyContent: "center" }}
             >
               Become a Sponsor
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

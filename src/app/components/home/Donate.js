@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Donate() {
   return (
-    <div id='donate' className="donate-section">
+    <div id="donate" className="donate-section">
       <div className="reveal">
         <div className="section-tag">Can't Sponsor?</div>
         <h2>
@@ -13,12 +13,15 @@ export default function Donate() {
           Mission Forward
         </h2>
         <p>
-          All donations go directly to competition costs — entry fees, robot
-          shipping, and team travel and lodging for Worlds in Houston.
+          {/* All donations go directly to competition costs — entry fees, robot
+          shipping, and team travel and lodging for Worlds in Houston. */}
+          While donations are currently not being accepted, keep us in mind for
+          the future! Check out our sponsorship tiers above to get an idea of
+          how your support can make a difference.
         </p>
 
         <div className="donate-methods">
-          <div className="donate-method">
+          {/* <div className="donate-method">
             <div className="donate-icon">🔗</div>
             <div>
               <div className="donate-method-label">GoFundMe</div>
@@ -32,7 +35,7 @@ export default function Donate() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="donate-method">
             <div className="donate-icon">💸</div>
             <div>
@@ -94,14 +97,14 @@ export default function Donate() {
             <span className="cursor"></span>
           </div>
         </div>
-        <a
+        {/* <a
           href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
           target="_blank"
           className="btn btn-primary"
           style={{ justifyContent: "center" }}
         >
           Donate on GoFundMe ↗
-        </a>
+        </a> */}
         <a
           href="https://drive.google.com/file/d/1YPhWvNXUeIanQ9ZkhAZHXmJwCadfhZ1R/view"
           target="_blank"

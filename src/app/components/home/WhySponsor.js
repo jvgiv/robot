@@ -25,8 +25,8 @@ export default function WhySponsor() {
         </div>
         <div className="image-frame">
           <Image
-            src="/richamps.jpg"
-            alt="Robo Titans team in action"
+            src="/robot/launcher.png"
+            alt="Robo Titans Robot"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             style={{ objectFit: "cover" }}
