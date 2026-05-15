@@ -10,11 +10,11 @@ export default function Record() {
         <div>
           <div className="section-tag">Our Record</div>
           <h2>
-            Dominant.
+            Determined.
             <br />
             Growing.
             <br />
-            Unstoppable.
+            Innovative.
           </h2>
           <p>
             In only four years, Robo Titans has built a powerful, competitive
