@@ -26,7 +26,7 @@ export default function Ftc() {
           <p>
             {/* In only four years, Robo Titans has built a powerful, competitive
             record. We are here — and we aren't going anywhere. */}
-              The First Tech Challenge (FTC) core values are the fundamental
+              The FIRST Tech Challenge (FTC) core values are the fundamental
         principals guiding participants - focusing on friendly sportsmanship,
         respect, teamwork, and learning. The six core values are:
       
