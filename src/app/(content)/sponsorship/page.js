@@ -108,9 +108,10 @@ export default function Sponsorship() {
                   transition: "border-color 0.2s",
                 }}
               >
-                <a
-                  href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
-                  target="_blank"
+                {/* THIS IS AN a TAG BELOW NOT DIV */}
+                <div
+                  // href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
+                  // target="_blank"
                   style={{
                     display: "flex",
                     alignItems: "flex-start",
@@ -149,7 +150,7 @@ export default function Sponsorship() {
                   >
                     ↗
                   </span>
-                </a>
+                </div>
               </li>
             ))}
           </ul>
@@ -165,16 +166,16 @@ export default function Sponsorship() {
             counts.
           </h2>
           <p style={{ marginTop: "1rem", marginBottom: "1.5rem" }}>
-            A donation of any size goes directly toward helping us compete at
-            the World Championship.
+            {/* A donation of any size goes directly toward helping us compete at
+            the World Championship. */}Our season has just concluded.  We are currently not accepting any more donations as of now.
           </p>
-          <a
+          {/* <a
             href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
             target="_blank"
             className="btn btn-primary"
           >
             Donate on GoFundMe ↗
-          </a>
+          </a> */}
           <div
             style={{
               marginTop: "1.5rem",
