@@ -9,7 +9,7 @@ export default function StatBand() {
       </div>
       <div className="stat-item">
         <span className="stat-num">1st</span>
-        <span className="stat-label">World Championship Qualifier</span>
+        <span className="stat-label">World Championship Appearance</span>
       </div>
       <div className="stat-item">
         <span className="stat-num">∞</span>
