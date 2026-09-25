@@ -13,21 +13,21 @@ export default function Donate() {
           Mission Forward
         </h2>
         <p>
-          {/* All donations go directly to competition costs — entry fees, robot
-          shipping, and team travel and lodging for Worlds in Houston. */}
-          While donations are currently not being accepted, keep us in mind for
+          All donations go directly to competition costs — entry fees, robot
+          shipping, and team travel and lodging.
+          {/* While donations are currently not being accepted, keep us in mind for
           the future! Check out our sponsorship tiers above to get an idea of
-          how your support can make a difference.
+          how your support can make a difference. */}
         </p>
 
         <div className="donate-methods">
-          {/* <div className="donate-method">
+          <div className="donate-method">
             <div className="donate-icon">🔗</div>
             <div>
               <div className="donate-method-label">GoFundMe</div>
               <div className="donate-method-detail">
                 <a
-                  href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
+                  href="https://www.gofundme.com/f/support-the-robotitans"
                   target="_blank"
                   style={{ color: "var(--electric)", textDecoration: "none" }}
                 >
@@ -35,7 +35,7 @@ export default function Donate() {
                 </a>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="donate-method">
             <div className="donate-icon">💸</div>
             <div>

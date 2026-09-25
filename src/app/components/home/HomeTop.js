@@ -20,7 +20,7 @@ export default function HomeTop() {
         </p>
         <div className="hero-cta">
           <a
-            href="https://www.gofundme.com/f/help-robotitans-compete-in-world-championship"
+            href="https://www.gofundme.com/f/support-the-robotitans"
             target="_blank"
             className="btn btn-primary"
           >
